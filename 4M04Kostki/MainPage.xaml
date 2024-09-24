@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_4M04Kostki.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="Gra w kości"
+                FontSize="40"
+                HorizontalOptions="Center"
+                />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Image
+                    x:Name="k00"
+                    Source="empty.png"
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    />
+                <Image
+                    x:Name="k01"
+                    Source="empty.png"
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    />
+                <Image
+                    x:Name="k10"
+                    Source="empty.png"
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    />
+                <Image
+                    x:Name="k11"
+                    Source="empty.png"
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    />
+                <Image
+                    x:Name="k20"
+                    Source="empty.png"
+                    Grid.Column="0"
+                    Grid.Row="2"
+                    />
+                <Image
+                    x:Name="k21"
+                    Source="empty.png"
+                    Grid.Column="1"
+                    Grid.Row="2"
+                    />
+
+            </Grid>
+            <Button
+                Text="rzuć kostkami"
+                Clicked="btnRzutClicked"
+                />
+            <Label
+                Text="suma: 0"
+                FontSize="40"
+                x:Name="lblSuma"
+                />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
